@@ -1,6 +1,5 @@
 local status,cmp = pcall(require,"cmp")
-if not status then
-	return
+if not status then return
 end
 
 local lspkind = require('lspkind')
@@ -16,14 +15,14 @@ cmp.setup({
 		{ name = 'luasnip', option = { show_autosnippets =  true } },
 		{ name = 'buffer' },
     { name = 'path' },
-		{ name = 'cmdline' }
+		-- { name = 'cmdline' }
 	},
 	mapping = cmp.mapping.preset.insert({
 		["<C-p>"] = cmp.mapping.select_prev_item(),
 		["<C-n>"] = cmp.mapping.select_next_item(),
 		["<C-l>"] = cmp.mapping.complete(),
 		["<C-e>"] = cmp.mapping.abort(),
-		["<CR>"] =  cmp.mapping.confirm( { select = true })
+		["<CR>"] =  cmp.mapping.confirm( { select = false })
 	}),
 	formatting = {
 		format = lspkind.cmp_format({

@@ -74,6 +74,3 @@ keymap.set('v', '<A-j>', ':m .+1<CR>==', opts)
 keymap.set('v', '<A-k>', ':m .-2<CR>==', opts)
 keymap.set('v', 'p', '"_dp', opts)
 
---Bufferline keymaps
-vim.api.nvim_set_keymap('n', '<Tab>', '<Cmd>BufferLineCricleNext<CR>', {})
-vim.api.nvim_set_keymap('n', '<S-Tab>', '<Cmd>BufferLineCirclePrev<CR>', {})

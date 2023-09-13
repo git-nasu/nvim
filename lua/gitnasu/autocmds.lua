@@ -2,13 +2,13 @@ local autocmd = vim.api.nvim_create_autocmd --Create autocommand
 
 --Remove whitespace on save
 autocmd('BufWritePre', {
-	pattern = '',
+	pattern = '*',
 	command = ':%s/\\s\\+$//e'
 })
 
 --Don't auto commenting on save
 autocmd('BufEnter', {
-	pattern = '',
+	pattern = '*',
 	command = 'set fo-=c fo-=r fo-=o' -- fo='formationoptions'
 })
 

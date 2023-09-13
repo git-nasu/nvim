@@ -94,5 +94,5 @@ vim.keymap.set('n', '<leader><leader>',
 -- telescope-frecency keymaps
 
 vim.keymap.set('n', 'sf',
-	"<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>", { noremap = true, silent = true }
+	"<Cmd>:Telescope frecency<CR>", { noremap = true, silent = true }
 )
