@@ -48,8 +48,12 @@ packer.startup(function(use)
 	use 'nvim-tree/nvim-web-devicons'
 
 	--indent blankline
-	use 'lukas-reineke/indent-blankline.nvim'
-
+  use {
+		'lukas-reineke/indent-blankline.nvim',
+		config = function()
+			require('ibl').setup()
+		end
+	}
 	--comment
 	use {
 		'numToStr/Comment.nvim',
@@ -101,6 +105,4 @@ packer.startup(function(use)
 	--gitsign
 	use 'lewis6991/gitsigns.nvim'
 
-	--ruby endwise
-	use	'RRethy/nvim-treesitter-endwise'
 end)
