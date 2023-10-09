@@ -105,4 +105,17 @@ packer.startup(function(use)
 	--gitsign
 	use 'lewis6991/gitsigns.nvim'
 
+
+  --endwise
+	use {
+		'RRethy/nvim-treesitter-endwise',
+		config = function()
+			require('nvim-treesitter.configs').setup({
+				endwise = {
+					enable  = true,
+				}
+			})
+		end
+	}
+
 end)

@@ -10,7 +10,7 @@ autotag.setup({
 			'xml',
 			'php',
 			'markdown',
-			'astro', 'glimmer', 'handlebars', 'hbs'
+			'astro', 'glimmer', 'handlebars', 'hbs','ejs'
 	},
 	skip_tags = {
 		'area', 'base', 'br', 'col', 'command', 'embed', 'hr', 'img', 'slot',

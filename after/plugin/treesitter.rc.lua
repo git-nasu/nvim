@@ -5,6 +5,7 @@ end
 
 ts.setup({
 	highlight = {
+		additional_vim_regex_highlighting = true,
 		enable = true,
 		disable = {}
 	},
@@ -17,7 +18,7 @@ ts.setup({
 		enable = true,
 		 filetypes = {
       'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'svelte', 'vue', 'tsx', 'jsx', 'rescript',
-      'css', 'lua', 'xml', 'php', 'markdown','rb'
+      'css', 'lua', 'xml', 'php', 'markdown','rb','ejs'
     }
 	}
 })
