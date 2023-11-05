@@ -33,9 +33,9 @@ packer.startup(function(use)
 	use 'onsails/lspkind.nvim'
 
 	--colorscheme
-	use 'EdenEast/nightfox.nvim'
+	--use 'EdenEast/nightfox.nvim'
 	--use { 'catppuccin/nvim', as = 'catppuccin' }
-	--use 'folke/tokyonight.nvim'
+	use 'folke/tokyonight.nvim'
 
 
 	--colorizer
@@ -93,7 +93,6 @@ packer.startup(function(use)
 		config = function()
 			require('telescope').load_extension('frecency')
 		end,
-		requires = { 'kkharji/sqlite.lua' }
 	}
 
 	--terminal
