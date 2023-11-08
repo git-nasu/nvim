@@ -104,6 +104,9 @@ packer.startup(function(use)
 	--gitsign
 	use 'lewis6991/gitsigns.nvim'
 
+	--nvim startuptime
+	use 'dstein64/vim-startuptime'
+
 
   --endwise
 	use {
